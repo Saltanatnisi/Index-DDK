@@ -12,3 +12,6 @@ venv/
 !/data/cache/.gitkeep
 /data/raw/*
 !/data/raw/.gitkeep
+
+# Local Netlify folder
+.netlify
