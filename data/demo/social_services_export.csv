@@ -1,0 +1,6 @@
+code,school,fap,kindergarten
+KG-001,within_5km,absent,absent
+KG-002,absent,absent,absent
+KG-003,in_settlement,in_settlement,present
+KG-004,in_settlement,within_5km,present
+KG-005,over_5km,absent,absent

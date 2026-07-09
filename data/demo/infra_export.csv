@@ -1,0 +1,6 @@
+code,connectivity,road_type,seasonal_closure,water_access
+KG-001,no_stable,gravel_dirt,regular_long,delivered
+KG-002,no_stable,no_road,regular_long,none_open_source
+KG-003,coverage_3g,asphalt_mixed,weather_dependent,street_column
+KG-004,stable_4g,asphalt_only,never,centralized_household
+KG-005,no_stable,no_road,regular_long,none_open_source
