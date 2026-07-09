@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Индекс уязвимости высокогорных, отдалённых и приграничных населённых пунктов КР</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-title">🏔️ Индекс уязвимости</div>
+      <div class="sidebar-subtitle">Высокогорные, отдалённые и приграничные населённые пункты КР</div>
+      <nav id="sidebar-nav" class="sidebar-nav"></nav>
+      <div class="sidebar-footer">
+        <p class="caption">Статическая демо-версия для Netlify. Полная версия (CLI + Streamlit-дашборд) — в
+        репозитории проекта.</p>
+      </div>
+    </aside>
+    <main class="main-content">
+      <div id="view-root">
+        <p>Загрузка данных…</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="js/methodology.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/views/overview.js"></script>
+  <script src="js/views/dialog.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/registry.js"></script>
+  <script src="js/views/sources.js"></script>
+  <script src="js/views/methodologyView.js"></script>
+  <script src="js/views/verification.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

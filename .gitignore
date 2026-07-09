@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Расчёты, кэш выгрузок и сырые данные, накопленные модулем во время
+# работы — не являются частью исходного кода и не должны попадать в репозиторий.
+/data/results/*/
+/data/cache/*
+!/data/cache/.gitkeep
+/data/raw/*
+!/data/raw/.gitkeep
+
+# Local Netlify folder
+.netlify

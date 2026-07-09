@@ -1,0 +1,601 @@
+{
+  "version": "1.0",
+  "effectiveDate": "2026-01-01",
+  "title": "Индекс уязвимости высокогорных, отдалённых и приграничных населённых пунктов Кыргызской Республики",
+  "approvedBy": null,
+  "valueRange": [
+    0.0,
+    3.0
+  ],
+  "components": {
+    "GEO": {
+      "title": "Географическая уязвимость (высота, уклон местности)",
+      "weight": 0.2,
+      "notes": null,
+      "indicators": {
+        "height": {
+          "title": "Высота над уровнем моря",
+          "unit": "м",
+          "weight": 0.8,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lt": 1500,
+              "score": 1,
+              "label": "менее 1500 м"
+            },
+            {
+              "gte": 1500,
+              "lte": 1999,
+              "score": 2,
+              "label": "1500–1999 м"
+            },
+            {
+              "gte": 2000,
+              "score": 3,
+              "label": "2000 м и выше"
+            }
+          ],
+          "options": null
+        },
+        "slope": {
+          "title": "Уклон местности",
+          "unit": "°",
+          "weight": 0.2,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lt": 12,
+              "score": 1,
+              "label": "менее 12°"
+            },
+            {
+              "gte": 12,
+              "lte": 20,
+              "score": 2,
+              "label": "12°–20°"
+            },
+            {
+              "gt": 20,
+              "score": 3,
+              "label": "более 20°"
+            }
+          ],
+          "options": null
+        }
+      }
+    },
+    "ACC": {
+      "title": "Транспортная удалённость и доступность",
+      "weight": 0.3,
+      "notes": null,
+      "indicators": {
+        "time_to_raion": {
+          "title": "Время в пути до райцентра",
+          "unit": "мин",
+          "weight": 0.35,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lte": 30,
+              "score": 1,
+              "label": "до 30 мин"
+            },
+            {
+              "gte": 31,
+              "lte": 60,
+              "score": 2,
+              "label": "31–60 мин"
+            },
+            {
+              "gt": 60,
+              "score": 3,
+              "label": "более 60 мин"
+            }
+          ],
+          "options": null
+        },
+        "distance_to_road": {
+          "title": "Дистанция до магистральной/первичной дороги",
+          "unit": "км",
+          "weight": 0.35,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lte": 5,
+              "score": 1,
+              "label": "до 5 км"
+            },
+            {
+              "gte": 6,
+              "lte": 20,
+              "score": 2,
+              "label": "6–20 км"
+            },
+            {
+              "gt": 20,
+              "score": 3,
+              "label": "более 20 км"
+            }
+          ],
+          "options": null
+        },
+        "time_to_raion_winter": {
+          "title": "Время в пути до райцентра зимой",
+          "unit": "мин",
+          "weight": 0.3,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lte": 60,
+              "score": 1,
+              "label": "до 60 мин"
+            },
+            {
+              "gte": 61,
+              "lte": 120,
+              "score": 2,
+              "label": "61–120 мин"
+            },
+            {
+              "gt": 120,
+              "score": 3,
+              "label": "более 120 мин"
+            }
+          ],
+          "options": null
+        }
+      }
+    },
+    "DEM": {
+      "title": "Демография и миграция",
+      "weight": 0.1,
+      "notes": "Базовый год для расчёта депопуляции — 2015. При расчёте сальдо миграции используется текущая (не среднегодовая) численность населения. Требуется временной ряд не менее 10 лет.",
+      "indicators": {
+        "population": {
+          "title": "Численность населения",
+          "unit": "чел.",
+          "weight": 0.35,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lte": 1000,
+              "score": 3,
+              "label": "до 1000"
+            },
+            {
+              "gte": 1001,
+              "lte": 2000,
+              "score": 2,
+              "label": "1001–2000"
+            },
+            {
+              "gte": 2001,
+              "lte": 3000,
+              "score": 1,
+              "label": "2001–3000"
+            },
+            {
+              "gt": 3000,
+              "score": 0,
+              "label": "более 3000"
+            }
+          ],
+          "options": null
+        },
+        "depopulation_pct": {
+          "title": "Депопуляция (изменение численности к базовому 2015 г.)",
+          "unit": "%",
+          "weight": 0.35,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lt": -10,
+              "score": 3,
+              "label": "менее −10%"
+            },
+            {
+              "gte": -10,
+              "lte": 5,
+              "score": 2,
+              "label": "от −10% до +5%"
+            },
+            {
+              "gt": 5,
+              "lte": 10,
+              "score": 1,
+              "label": "от +5% до +10%"
+            },
+            {
+              "gt": 10,
+              "score": 0,
+              "label": "более +10%"
+            }
+          ],
+          "options": null
+        },
+        "net_migration": {
+          "title": "Чистая миграция",
+          "unit": "на 1000 жит.",
+          "weight": 0.3,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "lt": -15,
+              "score": 3,
+              "label": "менее −15"
+            },
+            {
+              "gte": -15,
+              "lte": -5,
+              "score": 2,
+              "label": "от −15 до −5"
+            },
+            {
+              "gt": -5,
+              "lte": 5,
+              "score": 1,
+              "label": "от −5 до +5"
+            },
+            {
+              "gt": 5,
+              "score": 0,
+              "label": "более +5"
+            }
+          ],
+          "options": null
+        }
+      }
+    },
+    "SERV": {
+      "title": "Доступность социальных услуг",
+      "weight": 0.1,
+      "notes": null,
+      "indicators": {
+        "school": {
+          "title": "Наличие школы",
+          "unit": null,
+          "weight": 0.4,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "in_settlement": {
+              "score": 0,
+              "label": "есть в населённом пункте"
+            },
+            "within_5km": {
+              "score": 1,
+              "label": "на расстоянии ≤5 км"
+            },
+            "over_5km": {
+              "score": 2,
+              "label": "на расстоянии >5 км"
+            },
+            "absent": {
+              "score": 3,
+              "label": "отсутствует"
+            }
+          }
+        },
+        "fap": {
+          "title": "Наличие ФАП/амбулатории",
+          "unit": null,
+          "weight": 0.25,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "in_settlement": {
+              "score": 0,
+              "label": "есть в населённом пункте"
+            },
+            "within_5km": {
+              "score": 1,
+              "label": "на расстоянии ≤5 км"
+            },
+            "over_5km": {
+              "score": 2,
+              "label": "на расстоянии >5 км"
+            },
+            "absent": {
+              "score": 3,
+              "label": "отсутствует"
+            }
+          }
+        },
+        "kindergarten": {
+          "title": "Наличие детского сада",
+          "unit": null,
+          "weight": 0.35,
+          "type": "options",
+          "notes": "Минимальное значение установлено на уровне 2 баллов: даже при наличии объекта доступность дошкольного образования в высокогорных и отдалённых населённых пунктах остаётся ограниченной.",
+          "rules": null,
+          "options": {
+            "present": {
+              "score": 2,
+              "label": "есть"
+            },
+            "absent": {
+              "score": 3,
+              "label": "отсутствует"
+            }
+          }
+        }
+      }
+    },
+    "INFRA": {
+      "title": "Инфраструктурная обеспеченность",
+      "weight": 0.1,
+      "notes": null,
+      "indicators": {
+        "connectivity": {
+          "title": "Качество мобильной связи/интернета",
+          "unit": null,
+          "weight": 0.3,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "stable_4g": {
+              "score": 1,
+              "label": "устойчивое покрытие 4G"
+            },
+            "coverage_3g": {
+              "score": 2,
+              "label": "покрытие 3G"
+            },
+            "no_stable": {
+              "score": 3,
+              "label": "нет устойчивого покрытия"
+            }
+          }
+        },
+        "road_type": {
+          "title": "Тип дорожного покрытия",
+          "unit": null,
+          "weight": 0.2,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "asphalt_only": {
+              "score": 0,
+              "label": "только асфальт"
+            },
+            "asphalt_mixed": {
+              "score": 1,
+              "label": "асфальт и другие типы"
+            },
+            "gravel_dirt": {
+              "score": 2,
+              "label": "грунт/гравий"
+            },
+            "no_road": {
+              "score": 3,
+              "label": "дорога отсутствует"
+            }
+          }
+        },
+        "seasonal_closure": {
+          "title": "Сезонное перекрытие дорог",
+          "unit": null,
+          "weight": 0.2,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "never": {
+              "score": 0,
+              "label": "не перекрываются"
+            },
+            "rare_up_to_5_days": {
+              "score": 1,
+              "label": "редко, до 5 дней"
+            },
+            "weather_dependent": {
+              "score": 2,
+              "label": "зависит от погодных условий"
+            },
+            "regular_long": {
+              "score": 3,
+              "label": "перекрываются регулярно/продолжительно"
+            }
+          }
+        },
+        "water_access": {
+          "title": "Доступ к питьевой воде",
+          "unit": null,
+          "weight": 0.3,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "centralized_household": {
+              "score": 0,
+              "label": "централизованно в домохозяйствах"
+            },
+            "street_column": {
+              "score": 1,
+              "label": "уличная колонка"
+            },
+            "delivered": {
+              "score": 2,
+              "label": "привозная вода"
+            },
+            "none_open_source": {
+              "score": 3,
+              "label": "нет организованного водоснабжения / открытый источник"
+            }
+          }
+        }
+      }
+    },
+    "ECO": {
+      "title": "Экологические и природные риски",
+      "weight": 0.1,
+      "notes": "Минимальное значение компонента — 2 балла (природная уязвимость высокогорных и приграничных территорий присутствует даже при отсутствии локализованных опасных процессов).",
+      "indicators": {
+        "landslide_risk": {
+          "title": "Риск оползня / селя / лавины",
+          "unit": null,
+          "weight": 0.5,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "documented_absent": {
+              "score": 2,
+              "label": "задокументированный риск отсутствует"
+            },
+            "documented_present": {
+              "score": 3,
+              "label": "задокументированный риск присутствует"
+            }
+          }
+        },
+        "seismicity": {
+          "title": "Сейсмичность",
+          "unit": null,
+          "weight": 0.5,
+          "type": "options",
+          "notes": null,
+          "rules": null,
+          "options": {
+            "up_to_7": {
+              "score": 2,
+              "label": "до 7 баллов"
+            },
+            "above_7": {
+              "score": 3,
+              "label": "свыше 7 баллов"
+            }
+          }
+        }
+      }
+    },
+    "ECON": {
+      "title": "Экономическая устойчивость",
+      "weight": 0.1,
+      "notes": null,
+      "indicators": {
+        "tzhs_share": {
+          "title": "Доля семей в трудной жизненной ситуации (ТЖС)",
+          "unit": "%",
+          "weight": 0.4,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "gt": 10,
+              "score": 3,
+              "label": "более 10%"
+            },
+            {
+              "gte": 3,
+              "lte": 10,
+              "score": 2,
+              "label": "от 3% до 10%"
+            },
+            {
+              "eq": 0,
+              "score": 0,
+              "label": "0%"
+            },
+            {
+              "lt": 3,
+              "score": 1,
+              "label": "менее 3%"
+            }
+          ],
+          "options": null
+        },
+        "irrigated_land_per_capita": {
+          "title": "Обеспеченность орошаемыми землями на душу населения",
+          "unit": "га",
+          "weight": 0.4,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "eq": 0,
+              "score": 3,
+              "label": "0 (отсутствуют)"
+            },
+            {
+              "lt": 1,
+              "score": 2,
+              "label": "менее 1 га"
+            },
+            {
+              "gte": 1,
+              "score": 1,
+              "label": "1 га и более"
+            }
+          ],
+          "options": null
+        },
+        "business_density": {
+          "title": "Субъекты предпринимательства на 1000 жителей",
+          "unit": "на 1000 жит.",
+          "weight": 0.2,
+          "type": "numeric_thresholds",
+          "notes": null,
+          "rules": [
+            {
+              "gte": 0,
+              "lte": 5,
+              "score": 3,
+              "label": "0–5"
+            },
+            {
+              "gt": 5,
+              "lte": 10,
+              "score": 2,
+              "label": ">5–10"
+            },
+            {
+              "gt": 10,
+              "lte": 20,
+              "score": 1,
+              "label": ">10–20"
+            },
+            {
+              "gt": 20,
+              "score": 0,
+              "label": "более 20"
+            }
+          ],
+          "options": null
+        }
+      }
+    }
+  },
+  "categories": {
+    "approved": false,
+    "approach": "interval",
+    "thresholds": [
+      {
+        "lte": 1.0,
+        "category": "условно уязвимый"
+      },
+      {
+        "gt": 1.0,
+        "lte": 2.0,
+        "category": "умеренно уязвимый"
+      },
+      {
+        "gt": 2.0,
+        "category": "критично уязвимый"
+      }
+    ]
+  }
+}

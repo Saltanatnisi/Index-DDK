@@ -1,0 +1,512 @@
+{
+  "KG-001": {
+    "GEO.height": {
+      "value": 3000,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "GEO.slope": {
+      "value": 15,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion": {
+      "value": 90,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.distance_to_road": {
+      "value": 25,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion_winter": {
+      "value": 150,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "DEM.population": {
+      "value": 850,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.depopulation_pct": {
+      "value": -15,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.net_migration": {
+      "value": -20,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "SERV.school": {
+      "value": "within_5km",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.fap": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.kindergarten": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "INFRA.connectivity": {
+      "value": "no_stable",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.road_type": {
+      "value": "gravel_dirt",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.seasonal_closure": {
+      "value": "regular_long",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.water_access": {
+      "value": "delivered",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "ECO.landslide_risk": {
+      "value": "documented_present",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECO.seismicity": {
+      "value": "above_7",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECON.tzhs_share": {
+      "value": 15,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.irrigated_land_per_capita": {
+      "value": 0.0,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.business_density": {
+      "value": 3,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    }
+  },
+  "KG-002": {
+    "GEO.height": {
+      "value": 2800,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "GEO.slope": {
+      "value": 25,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion": {
+      "value": 120,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.distance_to_road": {
+      "value": 40,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion_winter": {
+      "value": 300,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "DEM.population": {
+      "value": 1500,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.depopulation_pct": {
+      "value": -5,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.net_migration": {
+      "value": -10,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "SERV.school": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.fap": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.kindergarten": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "INFRA.connectivity": {
+      "value": "no_stable",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.road_type": {
+      "value": "no_road",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.seasonal_closure": {
+      "value": "regular_long",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.water_access": {
+      "value": "none_open_source",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "ECO.landslide_risk": {
+      "value": "documented_absent",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECO.seismicity": {
+      "value": "above_7",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECON.tzhs_share": {
+      "value": 12,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.irrigated_land_per_capita": {
+      "value": 0.0,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.business_density": {
+      "value": 1,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    }
+  },
+  "KG-003": {
+    "GEO.height": {
+      "value": 1200,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "GEO.slope": {
+      "value": 8,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion": {
+      "value": 45,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.distance_to_road": {
+      "value": 10,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion_winter": {
+      "value": 90,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "DEM.population": {
+      "value": 3500,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.depopulation_pct": {
+      "value": 8,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.net_migration": {
+      "value": 8,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "SERV.school": {
+      "value": "in_settlement",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.fap": {
+      "value": "in_settlement",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.kindergarten": {
+      "value": "present",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "INFRA.connectivity": {
+      "value": "coverage_3g",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.road_type": {
+      "value": "asphalt_mixed",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.seasonal_closure": {
+      "value": "weather_dependent",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.water_access": {
+      "value": "street_column",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "ECO.landslide_risk": {
+      "value": "documented_present",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECO.seismicity": {
+      "value": "up_to_7",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECON.tzhs_share": {
+      "value": 2,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.irrigated_land_per_capita": {
+      "value": 1.5,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.business_density": {
+      "value": 15,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    }
+  },
+  "KG-004": {
+    "GEO.height": {
+      "value": 1700,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "GEO.slope": {
+      "value": 10,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion": {
+      "value": 20,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.distance_to_road": {
+      "value": 3,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion_winter": {
+      "value": 40,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "DEM.population": {
+      "value": 2500,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.depopulation_pct": {
+      "value": 2,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.net_migration": {
+      "value": 0,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "SERV.school": {
+      "value": "in_settlement",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.fap": {
+      "value": "within_5km",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.kindergarten": {
+      "value": "present",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "INFRA.connectivity": {
+      "value": "stable_4g",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.road_type": {
+      "value": "asphalt_only",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.seasonal_closure": {
+      "value": "never",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.water_access": {
+      "value": "centralized_household",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "ECO.landslide_risk": {
+      "value": "documented_absent",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECO.seismicity": {
+      "value": "up_to_7",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECON.tzhs_share": {
+      "value": 0,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.irrigated_land_per_capita": {
+      "value": 1.0,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.business_density": {
+      "value": 25,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    }
+  },
+  "KG-005": {
+    "GEO.height": {
+      "value": 3600,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "GEO.slope": {
+      "value": 22,
+      "sourceName": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion": {
+      "value": 180,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.distance_to_road": {
+      "value": 60,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "ACC.time_to_raion_winter": {
+      "value": 400,
+      "sourceName": "Минтранс КР / ГИС-анализ дорожной сети",
+      "sourceKind": "file"
+    },
+    "DEM.population": {
+      "value": 600,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.depopulation_pct": {
+      "value": -20,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "DEM.net_migration": {
+      "value": -25,
+      "sourceName": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+      "sourceKind": "nsc"
+    },
+    "SERV.school": {
+      "value": "over_5km",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.fap": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "SERV.kindergarten": {
+      "value": "absent",
+      "sourceName": "Минобразования КР / Минздрав КР (реестры объектов)",
+      "sourceKind": "file"
+    },
+    "INFRA.connectivity": {
+      "value": "no_stable",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.road_type": {
+      "value": "no_road",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.seasonal_closure": {
+      "value": "regular_long",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "INFRA.water_access": {
+      "value": "none_open_source",
+      "sourceName": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+      "sourceKind": "file"
+    },
+    "ECO.landslide_risk": {
+      "value": "documented_present",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECO.seismicity": {
+      "value": "above_7",
+      "sourceName": "МЧС КР / Институт сейсмологии НАН КР",
+      "sourceKind": "file"
+    },
+    "ECON.tzhs_share": {
+      "value": 18,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.irrigated_land_per_capita": {
+      "value": 0.0,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    },
+    "ECON.business_density": {
+      "value": 2,
+      "sourceName": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+      "sourceKind": "file"
+    }
+  }
+}

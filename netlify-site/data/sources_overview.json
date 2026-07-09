@@ -1,0 +1,230 @@
+[
+  {
+    "component": "GEO",
+    "indicator": "height",
+    "title": "Высота над уровнем моря",
+    "chain": [
+      {
+        "name": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+        "kind": "file"
+      },
+      {
+        "name": "Открытые геоданные (Open-Elevation / SRTM)",
+        "kind": "web"
+      }
+    ]
+  },
+  {
+    "component": "GEO",
+    "indicator": "slope",
+    "title": "Уклон местности",
+    "chain": [
+      {
+        "name": "Госагентство геодезии и картографии КР (выгрузка ЦМР)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ACC",
+    "indicator": "time_to_raion",
+    "title": "Время в пути до райцентра",
+    "chain": [
+      {
+        "name": "Минтранс КР / ГИС-анализ дорожной сети",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ACC",
+    "indicator": "distance_to_road",
+    "title": "Дистанция до магистральной/первичной дороги",
+    "chain": [
+      {
+        "name": "Минтранс КР / ГИС-анализ дорожной сети",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ACC",
+    "indicator": "time_to_raion_winter",
+    "title": "Время в пути до райцентра зимой",
+    "chain": [
+      {
+        "name": "Минтранс КР / ГИС-анализ дорожной сети",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "DEM",
+    "indicator": "population",
+    "title": "Численность населения",
+    "chain": [
+      {
+        "name": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+        "kind": "nsc"
+      }
+    ]
+  },
+  {
+    "component": "DEM",
+    "indicator": "depopulation_pct",
+    "title": "Депопуляция (изменение численности к базовому 2015 г.)",
+    "chain": [
+      {
+        "name": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+        "kind": "nsc"
+      }
+    ]
+  },
+  {
+    "component": "DEM",
+    "indicator": "net_migration",
+    "title": "Чистая миграция",
+    "chain": [
+      {
+        "name": "Национальный статистический комитет КР (открытые данные, stat.kg)",
+        "kind": "nsc"
+      }
+    ]
+  },
+  {
+    "component": "SERV",
+    "indicator": "school",
+    "title": "Наличие школы",
+    "chain": [
+      {
+        "name": "Минобразования КР / Минздрав КР (реестры объектов)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "SERV",
+    "indicator": "fap",
+    "title": "Наличие ФАП/амбулатории",
+    "chain": [
+      {
+        "name": "Минобразования КР / Минздрав КР (реестры объектов)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "SERV",
+    "indicator": "kindergarten",
+    "title": "Наличие детского сада",
+    "chain": [
+      {
+        "name": "Минобразования КР / Минздрав КР (реестры объектов)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "INFRA",
+    "indicator": "connectivity",
+    "title": "Качество мобильной связи/интернета",
+    "chain": [
+      {
+        "name": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "INFRA",
+    "indicator": "road_type",
+    "title": "Тип дорожного покрытия",
+    "chain": [
+      {
+        "name": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "INFRA",
+    "indicator": "seasonal_closure",
+    "title": "Сезонное перекрытие дорог",
+    "chain": [
+      {
+        "name": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "INFRA",
+    "indicator": "water_access",
+    "title": "Доступ к питьевой воде",
+    "chain": [
+      {
+        "name": "Госагентство связи КР / Минтранс КР / водное хозяйство",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ECO",
+    "indicator": "landslide_risk",
+    "title": "Риск оползня / селя / лавины",
+    "chain": [
+      {
+        "name": "МЧС КР / Институт сейсмологии НАН КР",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ECO",
+    "indicator": "seismicity",
+    "title": "Сейсмичность",
+    "chain": [
+      {
+        "name": "МЧС КР / Институт сейсмологии НАН КР",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ECON",
+    "indicator": "tzhs_share",
+    "title": "Доля семей в трудной жизненной ситуации (ТЖС)",
+    "chain": [
+      {
+        "name": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ECON",
+    "indicator": "irrigated_land_per_capita",
+    "title": "Обеспеченность орошаемыми землями на душу населения",
+    "chain": [
+      {
+        "name": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+        "kind": "file"
+      }
+    ]
+  },
+  {
+    "component": "ECON",
+    "indicator": "business_density",
+    "title": "Субъекты предпринимательства на 1000 жителей",
+    "chain": [
+      {
+        "name": "ГНС/Соцфонд КР — демонстрационная автоматизированная платформа (REST API)",
+        "kind": "api"
+      },
+      {
+        "name": "Минтруда КР / Минсельхоз КР (выгрузка реестров)",
+        "kind": "file"
+      }
+    ]
+  }
+]

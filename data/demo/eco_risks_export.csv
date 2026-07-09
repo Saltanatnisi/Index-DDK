@@ -1,0 +1,6 @@
+code,landslide_risk,seismicity
+KG-001,documented_present,above_7
+KG-002,documented_absent,above_7
+KG-003,documented_present,up_to_7
+KG-004,documented_absent,up_to_7
+KG-005,documented_present,above_7

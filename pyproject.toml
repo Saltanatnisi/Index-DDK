@@ -1,0 +1,33 @@
+[project]
+name = "vulnerability-index-module"
+version = "0.1.0"
+description = "Диалоговый модуль расчёта Индекса уязвимости высокогорных, отдалённых и приграничных населённых пунктов Кыргызской Республики"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML>=6.0",
+    "pandas>=2.0",
+    "openpyxl>=3.1",
+    "requests>=2.31",
+    "tabulate>=0.9",
+    "streamlit>=1.59",
+    "altair>=5.0",
+]
+
+[project.scripts]
+vulnerability-index = "vulnerability_index.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "vulnerability_index",
+    "vulnerability_index.datasources",
+    "webapp",
+    "webapp.views",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
