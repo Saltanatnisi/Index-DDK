@@ -4,5 +4,9 @@ openpyxl>=3.1
 requests>=2.31
 tabulate>=0.9
 
+# Веб-приложение (диалоговое окно + дашборд)
+streamlit>=1.59
+altair>=5.0
+
 pytest>=7.4
 pytest-mock>=3.12
